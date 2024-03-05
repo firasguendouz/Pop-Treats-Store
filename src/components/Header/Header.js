@@ -3,28 +3,17 @@
 import './header.css';
 
 import React, { useState } from 'react';
-import { addToBasket, updateQuantity } from '../../redux/basketSlice';
-import { useDispatch, useSelector } from 'react-redux';
 
 import Basket from '../Basket/Basket';
 import { FaShoppingBasket } from 'react-icons/fa';
 import logoImage from '../../products/logo.png'; // Adjust the path accordingly
+import { useSelector } from 'react-redux';
 
 const Header = () => {
-  const basketItems = useSelector(state => state.basket.items);
   const basketQuantity = useSelector(state => state.basket.totalQuantity);
-  const dispatch = useDispatch();
   const [isBasketOverlayVisible, setBasketOverlayVisibility] = useState(false);
 
-  const handleAddToBasket = (product) => {
-    const existingProduct = basketItems.find(item => item.id === product.id);
-
-    if (existingProduct) {
-      dispatch(updateQuantity({ itemId: product.id, newQuantity: existingProduct.quantity + 1 }));
-    } else {
-      dispatch(addToBasket(product));
-    }
-  };
+  
 
   const handleBasketClick = () => {
     setBasketOverlayVisibility(!isBasketOverlayVisible);
