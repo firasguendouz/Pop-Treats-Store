@@ -3,7 +3,6 @@ import './checkout.css';
 import React, { useState } from 'react';
 
 import Basket from '../Basket/Basket';
-import PaymentForm from './PaymentForm'; // This will be your new Stripe payment form component
 
 const Checkout = ({ onConfirmOrder }) => {
     // Load your publishable key
