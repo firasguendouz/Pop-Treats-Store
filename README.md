@@ -1,4 +1,4 @@
-/my-nineties-store
+/Pop-treats-store
 |-- /public
     |-- index.html
     |-- favicon.ico
