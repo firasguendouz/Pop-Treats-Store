@@ -1,14 +1,10 @@
 import '../App.css'; // Assuming you have some general styles
 
-import { Link, useNavigate } from 'react-router-dom';
-
 import Checkout from '../components/Checkout/Checkout';
 import { Elements } from '@stripe/react-stripe-js';
-import PaymentButton from '../components/PaymentButton';
+import { Link } from 'react-router-dom';
 import React from 'react';
 import { loadStripe } from '@stripe/stripe-js';
-
-const stripePromise = loadStripe('pk_live_51OqmVPFXCxDMGeV2e2LwWAicgiuUwxeYRlETPP9vlvwoHFnz0fgqlwU4VzhhLkWlZt6eEUuwBbQDbO0qz2yu3lwa008K1n6dgO'); // Replace with your actual publishable key
 
 const CheckoutPage = () => {
 // Load your Stripe publishable key
