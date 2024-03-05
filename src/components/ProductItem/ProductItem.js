@@ -48,7 +48,6 @@ const ProductItem = ({ product, onAddToBasket }) => {
                 {/* Improve accessibility by adding a role and tabindex to the button */}
                 <button
                     onClick={handleClick}
-                    role="button"
                     tabIndex="0"
                     className="addToBasketButton"
                 >
