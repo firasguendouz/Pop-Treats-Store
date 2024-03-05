@@ -1,0 +1,29 @@
+.footer {
+    background-color: #009688; /* A teal background, typical of '90s design */
+    color: #FFFFFF; /* White text for contrast */
+    padding: 20px;
+    text-align: center;
+    margin-top:  15%;
+}
+
+.footer-content p {
+    margin: 10px 0; /* Space out text */
+    font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif; /* '90s-style font */
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-link {
+    margin: 0 10px;
+    color: #FFFF00; /* Bright yellow for links */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+    color: #FF69B4; /* Hot pink on hover for a playful touch */
+}

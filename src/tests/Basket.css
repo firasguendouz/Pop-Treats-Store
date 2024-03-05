@@ -1,0 +1,111 @@
+/* Basket.css */
+
+/* Container Styles */
+.basket-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px; /* Adjust as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Styles */
+  .basket-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Close Icon Styles */
+  .close-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: #888;
+  }
+  
+  /* Item Styles */
+  .basket-item {
+    margin-bottom: 15px;
+  }
+  
+  /* Quantity Adjustment Styles */
+  .quantity-adjustment {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-adjustment button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Remove Button Styles */
+  .remove-button {
+    background-color: #f44336;
+  }
+  
+  /* Subtotal Styles */
+  .subtotal {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Total Cost Styles */
+  .total-cost {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  /* Checkout Button Styles */
+  .checkout-button {
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .checkout-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Optional Enhancements */
+  
+  /* Sticky Footer */
+  .basket-footer {
+    position: sticky;
+    bottom: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-top: 2px solid #ccc;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode .basket-popup {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Additional Styling for Light/Dark Mode Switch (if applicable) */
+  

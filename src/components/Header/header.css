@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #0096878d; /* Teal background, typical of '90s design */
+  color: #FFFFFF; /* White text for contrast */
+}
+.logo img {
+  max-height: 60px; /* Adjust the maximum height of your logo */
+  max-width: 100%; /* Ensure the logo is responsive */
+}
+.header .logo h1 {
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Replace with a '90s-style font if available */
+  font-size: 24px;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navigation ul li {
+  margin-left: 20px;
+}
+
+.navigation ul li a {
+  color: #FFFFFF; /* White text for contrast */
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif; /* Consistent font style */
+}
+
+/* Add hover effects for links */
+.navigation ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+  }
+
+  .navigation ul {
+      margin-top: 20px;
+  }
+}

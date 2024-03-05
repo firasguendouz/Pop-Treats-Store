@@ -1,0 +1,70 @@
+.basket {
+  padding: 20px;
+  background-color: #f8f9fa; /* Lighter background for a clean look */
+  border-radius: 8px;
+  color: #343a40; /* Darker text for better contrast */
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.basket h2 {
+  color: #343a40; /* Darker text for better contrast */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.basketItems {
+  margin-top: 20px;
+}
+
+.basketItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 15px; /* Add padding for a cleaner look */
+  background-color: #ffffff; /* White background for each item */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+}
+
+.quantityControls button {
+  background-color: #28a745; /* Use Bootstrap's success color for consistency */
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 4px;
+}
+
+.quantityControls button:hover {
+  background-color: #218838; /* Darker on hover */
+}
+
+.quantityControls span {
+  min-width: 20px;
+  text-align: center;
+}
+
+.checkout {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.checkout button {
+  background-color: #ffc107; /* Use Bootstrap's warning color for consistency */
+  color: #212529;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.checkout button:hover {
+  background-color: #e0a800; /* Darker on hover */
+}

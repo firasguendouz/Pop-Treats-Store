@@ -1,0 +1,30 @@
+/* AboutUs.css */
+
+.about-us-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .about-us-title {
+    font-size: 2.5rem;
+    color: #3E4095;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .about-us-welcome {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #3E4095;
+    margin-top: 20px;
+  }
+  

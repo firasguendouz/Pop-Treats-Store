@@ -1,0 +1,46 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3E4095;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .basket-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .basket-icon {
+    font-size: 1.2rem;
+    margin-right: 5px;
+  }
+  
+  .basket-count {
+    background-color: #fff;
+    color: #3E4095;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border-radius: 50%;
+  }
+  
