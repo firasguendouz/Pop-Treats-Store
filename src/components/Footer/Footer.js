@@ -9,9 +9,9 @@ const Footer = () => {
                 <p>© 2024 Pop Treats Store. All rights reserved.</p>
                 <p>Follow us on social media!</p>
                 <div className="social-links">
-                    <a href="#" className="social-link">Facebook</a>
-                    <a href="#" className="social-link">Twitter</a>
-                    <a href="#" className="social-link">Instagram</a>
+                    <a href="https://www.facebook.com/" className="social-link">Facebook</a>
+                    <a href="https://twitter.com/" className="social-link">Twitter</a>
+                    <a href="https://www.instagram.com/" className="social-link">Instagram</a>
                 </div>
             </div>
         </footer>
