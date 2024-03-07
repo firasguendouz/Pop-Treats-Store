@@ -1,10 +1,21 @@
+// middleware/authenticationMiddleware.js
+
+const jwt = require('jsonwebtoken');
+
 const isAuthenticated = (req, res, next) => {
-    // Add your authentication logic here
-    // Check if the user is authenticated
-    // For example, using Passport.js or JSON Web Tokens (JWT)
-    // If authenticated, call next(); otherwise, send a 401 response
+  const token = req.header('Authorization')?.split(' ')[1]; // Bearer TOKEN
+
+  if (!token) {
+    return res.status(401).send('Access denied. No token provided.');
+  }
+
+  try {
+    const decoded = jwt.verify(token, process.env.TOKEN_SECRET);
+    req.user = decoded;
     next();
-  };
-  
-  module.exports = isAuthenticated;
-  
+  } catch (ex) {
+    res.status(400).send('Invalid token.');
+  }
+};
+
+module.exports = isAuthenticated;
